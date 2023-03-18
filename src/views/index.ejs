@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta / clone</title>
+    <link rel="stylesheet" href="../public/css/navbar.css">
+    <link rel="stylesheet" href="../public/css/profile.css">
+    <link rel="stylesheet" href="../public/css/posts.css">
+    <link rel="stylesheet" href="../public/css/stories.css">
+    <link rel="stylesheet" href="../public/css/sidebar.css">
+</head>
+<body>
+    <%- include('parts/nav')%>
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <%- include('profile')%>
+                <%- include("parts/stories")%>
+                <%- include("parts/story")%>
+                
+            </div>
+            <div class="right-col">
+                <%- include('parts/sidebar')%>
+
+            </div>
+    </section>
+</body>
+</html>
